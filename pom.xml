@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jboss</groupId>
+    <artifactId>jboss-parent</artifactId>
+    <version>39</version>
+  </parent>
+
+  <groupId>org.example</groupId>
+  <artifactId>wf-gha</artifactId>
+  <!--
+      Maintain separation between the artifact id and the version to help prevent
+      merge conflicts between commits changing the GA and those changing the V.
+  -->
+  <version>1.0-SNAPSHOT-PSI</version>
+
+  <packaging>pom</packaging>
+
+  <name>WildFly: Parent Aggregator</name>
+  <description>WildFly: Parent Aggregator</description>
+
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License v2.1 or later</name>
+      <url>http://repository.jboss.org/licenses/lgpl-2.1.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <modules>
+    <module>main</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.example</groupId>
+        <artifactId>wf-core-gha</artifactId>
+        <version>1.0-SNAPSHOT-PSI</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
