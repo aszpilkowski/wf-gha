@@ -15,3 +15,4 @@ jobs:
           ref: ${{ github.event.client_payload.sha }}
 
       # Add your workflow steps here
+      - run: echo "success"
