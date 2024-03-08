@@ -25,9 +25,9 @@ jobs:
           cache-dependency-path: 'pom.xml' # optional
       - name: Build with Maven
         run: >
-          ls -la ${{github.workspace}}
-          ls -la ${{github.workspace}}/reports
-          ls -la ~/.m2
+          ls -la ${{github.workspace}} &&
+          ls -la ${{github.workspace}}/reports &&
+          ls -la ~/.m2 &&
           mvn -B package --file pom.xml
           
       - name: Dependency check
