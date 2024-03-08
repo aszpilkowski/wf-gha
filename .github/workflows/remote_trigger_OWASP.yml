@@ -34,7 +34,7 @@ jobs:
         uses: dependency-check/Dependency-Check_Action@main
         env:
           JAVA_HOME: /opt/jdk
-        id: dependency-check-wf-core
+        id: dependency-check-wf
         with:
           project: 'wf-core-gha'
           path: '.'
