@@ -13,7 +13,6 @@ jobs:
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
-          name: 'Dependency check report' 
           github-token: ${{ secrets.TRIGGER_KEY }}
           repository: aszpilkowski/wf-core-gha
 
