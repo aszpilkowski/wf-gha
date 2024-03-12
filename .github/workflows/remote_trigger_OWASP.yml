@@ -23,6 +23,9 @@ jobs:
           java-version: '17'
           cache: 'maven'
           cache-dependency-path: 'pom.xml' # optional
+
+      - name: Show M2
+        run: ls -la ~/.m2/repository
       - name: Build with Maven
         run: mvn -B package --file pom.xml
           
