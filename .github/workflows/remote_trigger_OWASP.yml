@@ -27,7 +27,7 @@ jobs:
           cache-dependency-path: 'pom.xml' # optional
 
       - name: Echo Github client payload
-        run: echo ${{ github.event }}
+        run: echo ${{ github.event.client_payload.run_id }}
       - name: Build with Maven
         run: mvn -B package --file pom.xml
           
