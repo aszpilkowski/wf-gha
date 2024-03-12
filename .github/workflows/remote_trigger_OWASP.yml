@@ -27,8 +27,6 @@ jobs:
 
       - name: Show M2
         run: ls -la
-      - name: print client payload
-        run: echo ${{ github.event }} 
       - name: Build with Maven
         run: mvn -B package --file pom.xml
           
