@@ -23,6 +23,8 @@ jobs:
           java-version: '17'
           cache: 'maven'
           cache-dependency-path: 'pom.xml' # optional
+      - uses: actions/cache@v3
+        id: cache-wf-core
       - name: Build with Maven
         run: >
           ls -la ${{github.workspace}} &&
