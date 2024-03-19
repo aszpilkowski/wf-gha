@@ -14,7 +14,7 @@
       Maintain separation between the artifact id and the version to help prevent
       merge conflicts between commits changing the GA and those changing the V.
   -->
-  <version>1.0-SNAPSHOT-PSI</version>
+  <version>1.0.26-SNAPSHOT-PSI</version>
 
   <packaging>pom</packaging>
 
@@ -37,7 +37,7 @@
       <dependency>
         <groupId>org.example</groupId>
         <artifactId>wf-core-gha</artifactId>
-        <version>1.0-SNAPSHOT-PSI</version>
+        <version>1.0.26-SNAPSHOT-PSI</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
